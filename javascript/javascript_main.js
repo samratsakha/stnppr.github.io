@@ -3,6 +3,7 @@ var turn1;
 var p1;
 var p2;
 var x=0,y=0;
+var end=0;
 var snd=document.getElementById("aud");
 var snd1=document.getElementById("aud1");
 var snd2=document.getElementById("aud2");
@@ -108,9 +109,20 @@ function func2(){
     p1=0;
     p2=0;
     if(x==10 && y<x){
+        end=1;
         window.open("play1.html","_self");
     }
     if(y==10 && x<y){
+        end=1;
         window.open("play2.html","_self");
     }
 }
+
+window.onbeforeunload = function(e) {
+    if(end==1){
+      window.location.reload(false); 
+    }
+    else{
+        return "Are you sure";
+    }
+};

@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/play1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward();
+        }
+    </script>
     <title>Player -2 Won</title>
 </head>
-<body>
+<body  onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
     <h1>Player 2 Won</h1>
     <img src="congrats.gif">
     
