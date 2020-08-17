@@ -108,9 +108,9 @@ function func2(){
     p1=0;
     p2=0;
     if(x==10 && y<x){
-        document.write("<h1>Player 1 won</h1>");
+        window.open("play1.html","_self");
     }
     if(y==10 && x<y){
-        document.write("<h1>Player 2 won</h1>");
+        window.open("play2.html","_self");
     }
 }
