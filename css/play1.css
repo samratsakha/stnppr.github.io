@@ -16,3 +16,17 @@ body{
 body img{
     border-radius: 50%;
 }
+
+#btn{
+    height: 45px;
+    width: 90px;
+    border: solid 2px rgb(126, 0, 0);
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 2%;
+    background-color: rgb(229, 233, 13);
+}
+
+#btn:hover{
+    background-color: rgb(3, 243, 83);
+}
