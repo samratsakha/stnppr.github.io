@@ -111,10 +111,16 @@ function func2(){
     if(x==10 && y<x){
         end=1;
         window.open("play1.html","_self");
+        document.getElementById("btn2").style.visibility="hidden";
+        document.getElementById("btn1").style.visibility="hidden";
+        document.getElementById("h23").innerHTML="Player 1 won";
     }
     if(y==10 && x<y){
         end=1;
         window.open("play2.html","_self");
+        document.getElementById("btn2").style.visibility="hidden";
+        document.getElementById("btn1").style.visibility="hidden";
+        document.getElementById("h23").innerHTML="Player 2 won";
     }
 }
 
